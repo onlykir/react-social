@@ -1,4 +1,5 @@
 import styles from './Sidebar.module.css'
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return <nav className={styles.sidebar}>
@@ -8,16 +9,16 @@ const Sidebar = () => {
       </div>
       <div className={styles.feeds_items}>
         <div className={styles.feeds_item}>
-          <a>Profile</a>
+          <Link to="/profile">Profile</Link>
         </div>
         <div className={styles.feeds_item}>
-          <a>Messages</a>
+          <Link to="/dialogs">Messages</Link>
         </div>
         <div className={styles.feeds_item}>
-          <a>News</a>
+          <Link to="/news">News</Link>
         </div>
         <div className={styles.feeds_item}>
-          <a>Music</a>
+          <Link to="/music">Music</Link>
         </div>
       </div>
     </div>
