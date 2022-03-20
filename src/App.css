@@ -7,18 +7,18 @@
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 8fr 2fr;
   grid-gap: 15px;
+  min-height: 100vh;
 }
 
 .app_wrapper_content {
   grid-area: prof;
-  display: flex;
-  align-items: center;
+  justify-self: center;
 }
 
 .app_wrapper_container {
   border-radius: 10px;
   background-color: #fff;
-  max-width: 1000px;
+  min-width: 800px;
   margin: auto;
   padding: 15px;
 }

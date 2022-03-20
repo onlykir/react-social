@@ -13,7 +13,6 @@ const App = () => {
     <div className="app_wrapper">
       <Header />
       <Sidebar />
-
       <div className ="app_wrapper_content">
         <div className="app_wrapper_container">
           <Routes>

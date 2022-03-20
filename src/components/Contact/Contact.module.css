@@ -12,13 +12,16 @@
 
 .users_items {
   font-family: 'Open Sans', sans-serif;
+}
+
+.users_item a {
   font-size: 15px;
   font-weight: 600;
   line-height: 28px;
   color: #888;
 }
 
-.users_item:hover {
+.users_item a:hover {
   color: #1E74FD;
 }
 

@@ -1,5 +1,6 @@
 import styles from './Sidebar.module.css'
 import { Link } from 'react-router-dom';
+import { CustomLink } from '../CustomLink';
 
 const Sidebar = () => {
   return <nav className={styles.sidebar}>
@@ -9,16 +10,16 @@ const Sidebar = () => {
       </div>
       <div className={styles.feeds_items}>
         <div className={styles.feeds_item}>
-          <Link to="/profile">Profile</Link>
+          <CustomLink to="/profile">Profile</CustomLink>
         </div>
         <div className={styles.feeds_item}>
-          <Link to="/dialogs">Messages</Link>
+          <CustomLink to="/dialogs">Messages</CustomLink>
         </div>
         <div className={styles.feeds_item}>
-          <Link to="/news">News</Link>
+          <CustomLink to="/news">News</CustomLink>
         </div>
         <div className={styles.feeds_item}>
-          <Link to="/music">Music</Link>
+          <CustomLink to="/music">Music</CustomLink>
         </div>
       </div>
     </div>

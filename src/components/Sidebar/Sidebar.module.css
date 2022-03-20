@@ -12,16 +12,19 @@
 
 .feeds_items, .account_items {
   font-family: 'Open Sans', sans-serif;
+}
+
+.feeds_item a, .account_item a {
+  text-decoration: none;
   font-size: 15px;
   font-weight: 600;
   line-height: 28px;
   color: #888;
 }
 
-
-.feeds_item:hover, .account_item:hover {
+/* .feeds_item a:hover, .account_item a:hover {
   color: #1E74FD;
-}
+} */
 
 .feeds_name, .account_name {
   font-family: 'Montserrat', sans-serif;
