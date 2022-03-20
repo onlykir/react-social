@@ -1,0 +1,28 @@
+.contact {
+  grid-area: c;
+}
+
+.users {
+  background-color: #fff;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.users_items {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #888;
+}
+
+.users_item:hover {
+  color: #1E74FD;
+}
+
+.users_name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
