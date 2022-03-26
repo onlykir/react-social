@@ -1,22 +1,21 @@
 import styles from './Dialogs.module.css'
+import DialogItem from './DialogItem/DialogItem';
+import Message from './Message/Message';
 
-const Dialogs = () => {
+const Dialogs = (props) => {
+
+  let dialogsElements = props.state.dialogs.map(dialog => <DialogItem name={dialog.name} id = {dialog.id} /> )
+  let messagesElements = props.state.messages.map(message => <Message text={message.text} /> )
+
   return <div>
     <div className={styles.dialogs}>
       <div className={styles.dialogs_content}>
         <div className={styles.dialogs_items}>
-          <div className={styles.dialog  + ' ' + styles.active}>
-            Kirill
-          </div>
-          <div className={styles.dialog}>
-            Alesya
-          </div>
+          { dialogsElements }
         </div>
       </div>
       <div className={styles.messages}>
-        <div className={styles.message}>
-            Hi!
-        </div>
+        { messagesElements }
       </div>
     </div>
   </div>

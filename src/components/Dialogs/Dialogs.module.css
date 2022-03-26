@@ -1,24 +1,29 @@
 .dialogs {
   display: grid;
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 3fr 9fr;
 }
 
 .dialogs_items {
   padding: 10px;
 }
 
-.dialogs_items .active {
+.dialogs_item .dialogs_item_link{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 28px;
   color: #888;
 }
 
-.dialog {
-
+.dialogs_item_link .active {
+  color: black;
 }
+
 
 .messages {
   padding: 10px;
 }
 
-.message {
+.messages .message {
 
 }
